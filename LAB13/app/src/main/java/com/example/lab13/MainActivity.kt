@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun register(channel: String) {
-        //建立 IntentFilter 物件來指定接收的頻道，並註冊 Receiver
+
         val intentFilter = IntentFilter(channel)
         registerReceiver(receiver, intentFilter)
 

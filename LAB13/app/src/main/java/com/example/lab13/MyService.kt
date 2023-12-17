@@ -20,7 +20,6 @@ class MyService : Service(), CoroutineScope {
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        //解析 Intent 取得字串訊息
         intent?.extras?.let {
             channel = it.getString("channel", "")
         }
